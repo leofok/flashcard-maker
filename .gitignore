@@ -1,1 +1,23 @@
- 
+# 系統文件
+.DS_Store
+Thumbs.db
+
+# 編輯器/IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 依賴包
+node_modules/
+
+# 日誌文件
+*.log
+
+# 環境配置
+.env
+.env.local
+
+# 暫存文件
+tmp/
+temp/ 
