@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自訂卡牌工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="addCard">新增卡牌</button>
+        <button id="removeCard">移除卡牌</button>
+        <button id="toggleEdit">進入編輯模式</button>
+    </div>
+    
+    <div class="cards-container" id="cardsContainer">
+        <!-- 卡牌將在這裡動態生成 -->
+    </div>
+
+    <div class="card-editor" id="cardEditor" style="display: none;">
+        <h3>編輯卡牌內容</h3>
+        <div class="editor-section">
+            <h4>正面</h4>
+            <textarea id="frontContent" placeholder="輸入文字內容"></textarea>
+            <input type="file" id="frontImage" accept="image/*">
+        </div>
+        <div class="editor-section">
+            <h4>背面</h4>
+            <textarea id="backContent" placeholder="輸入文字內容"></textarea>
+            <input type="file" id="backImage" accept="image/*">
+        </div>
+        <button id="saveCard">儲存卡牌</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
